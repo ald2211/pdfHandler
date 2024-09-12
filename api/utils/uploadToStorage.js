@@ -1,14 +1,16 @@
 import { google } from 'googleapis';
 import { v4 as uuidv4 } from 'uuid';
 import { PassThrough } from 'stream';
+import { keys } from '../keys.js';
+
 
 // Function to upload the file
 export const uploadToStorage = async (fileBuffer, fileName) => {
   try {
     // Authenticate using a service account key
-     
+     //process.env.GOOGLE_ACCESS_KEY_FILE_PATH
     const auth = new google.auth.GoogleAuth({
-      keyFile:process.env.GOOGLE_ACCESS_KEY_FILE_PATH, // Make sure this points to your actual key file
+      credentials:keys, // Make sure this points to your actual key file
       scopes: ['https://www.googleapis.com/auth/drive'],
     });
 

@@ -8,7 +8,7 @@ import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import ExtractPdfs from './ExtractPdfs'; // Import the ExtractPdfs component
 
-// Configure the worker using the UMD version
+// Configure the worker 
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const PdfUploader = () => {
@@ -65,6 +65,7 @@ const PdfUploader = () => {
             ]);
             setPdfData(null);
             setSelectedPages([]);
+            setFile(null)
         } catch (error) {
             console.error('Error creating PDF', error);
         } finally {
