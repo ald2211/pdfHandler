@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node api/server.js",
-    "dev": "nodemon api/server.js"
+    "dev": "nodemon api/server.js",
+    "build":"npm install --prefix ./frontEnd && npm run build --prefix ./frontEnd && npm install"
   },
   "author": "",
   "license": "ISC",

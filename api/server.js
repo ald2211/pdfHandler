@@ -23,10 +23,10 @@ app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/pdf', pdfRouter)
 
 //-------------deployment--------------//
-// app.use(express.static(path.join(__dirname, 'frontEnd/dist')))
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'frontEnd/dist/index.html'))
-// })
+app.use(express.static(path.join(__dirname, 'frontEnd/dist')))
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontEnd/dist/index.html'))
+})
 //------------deployment--------------//
 
 // Catch-all route for undefined routes
