@@ -12,8 +12,7 @@ can able to select which pages they want to include in the new PDF.
 - [Overview](#overview)
 - [Features and Functionalities](#features-and-functionalities)
   - [User Authentication](#1-user-authentication)
-  - [Image Management](#2-image-management)
-  - [Image Rearrangement](#3-image-rearrangement)
+  - [Pdf Management](#2-pdf-management)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
   - [Clone the Repository](#1-clone-the-repository)
@@ -22,8 +21,7 @@ can able to select which pages they want to include in the new PDF.
   - [Run the Application](#4-run-the-application)
 - [API Endpoints](#api-endpoints)
   - [User Authentication](#user-authentication)
-  - [Image Management](#image-management)
-  - [Reset Password](#reset-password)
+  - [pdf Management](#pdf-management)
 - [Usage](#usage)
 - [Live Link](#live-link)
 - [Contact](#contact)
@@ -119,7 +117,7 @@ npm start
 - **Register**: `POST /api/v1/auth/register`
 - **Login**: `POST /api/v1/auth/login`
 
-### Image Management
+### pdf Management
 - **Get extracted pdfs**: `GET /api/v1/pdf/extract`
 - **Upload pdf**: `POST /api/v1/pdf/upload`
 - **Extract pdf**: `POST /api/v1/pdf/extract`
