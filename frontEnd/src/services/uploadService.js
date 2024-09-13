@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://stockimage-platform.onrender.com/api/v1/pdf/';
+const API_URL = 'https://pdfhandler.onrender.com/api/v1/pdf/';
 
 // Function to upload PDF
 export const uploadPdf = async (pdf) => { 
