@@ -24,7 +24,7 @@ export const uploadPdf = async (req, res, next) => {
     const numPages = pdfDoc.getPageCount();
    
   
-    res.json({ filePath:`http://localhost:3000/uploads/${req.file.filename}`,actualPath:req.file.path, numPages });
+    res.json({ filePath:`https://pdfhandler.onrender.com/uploads/${req.file.filename}`,actualPath:req.file.path, numPages });
 
   } catch (error) {
     console.error('Error during pdf upload:', error.message);
