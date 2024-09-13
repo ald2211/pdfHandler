@@ -12,7 +12,7 @@ const ExtractPdfs = ({ extractedPdfs, setExtractedPdfs }) => {
         <div className="container mx-auto p-4 pt-[118px]">
             <h2 className="text-2xl font-bold mb-4">Extracted PDFs</h2>
             <div className="flex flex-wrap gap-4">
-                {data.length > 0 ? (
+                {data?.length > 0 ? (
                     data.map((pdf, index) => (
                         <div key={index} className="border p-4 rounded">
                             <h3 className="text-xl font-semibold">{index + 1}</h3>
